@@ -59,6 +59,7 @@ ___
 ```bash
 cd Frontend
 npm install
+cd ../
 ```
 
 <li>Backend</li>
@@ -66,6 +67,7 @@ npm install
 ```bash
 cd Server
 npm install
+cd ../
 ```
 ___
 
@@ -76,12 +78,14 @@ ___
 ```bash
 cd Server
 npx knex --knexfile src/config/knexfile.js migrate:latest
+cd ../
 ```
 <li>Données Initials (user : admin)</li>
 
 ```bash
 cd Server
 npx knex --knexfile src/config/knexfile.js seed:run
+cd ../
 ```
 
 ___
